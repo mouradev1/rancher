@@ -23,8 +23,10 @@ docker rancher start
 
 * Comando para descompacta o backup dentro da sua nova vm
 
+```
 tar pzxvf  rancher-backup.tar.gz -C /
 
+```
 
 ```
 docker run -d --restart=unless-stopped \
