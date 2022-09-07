@@ -28,13 +28,15 @@ tar pzxvf  rancher-backup.tar.gz -C /
 
 ```
 
+# Subindo o rancher com a versão atualizada
+
 ```
 docker run -d --restart=unless-stopped \
   -p 80:80 -p 443:443 \
   -v /opt/rancher:/var/lib/rancher \
   --privileged \
   --name rancher \
-  rancher/rancher:v2.6.3
+  rancher/rancher:v2.6.8
 
 ```
 
